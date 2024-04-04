@@ -1,0 +1,382 @@
+:root {
+    --color: linear-gradient(45deg, #11998E, #38EF7D);
+}
+
+body {
+    background-color: rgb(39, 88, 76);
+    /* background: linear-gradient(135deg, #8052ec, #d161ff); */
+    /* background: var(--color); */
+    /* background: linear-gradient(330deg,  red, orange, yellow, green, blue, indigo, violet); */
+    background-attachment: fixed;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    width: 100%;
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+
+form {
+    max-width: 600px;
+    background-color: #111;
+    margin: auto;
+    padding: 30px;
+    font-size: 1.3rem;
+    border-radius: 2%;
+    /* box-shadow: 0px 0px 5px 4px rgba(0, 200, 150, 0.9); */
+    /* box-shadow: 0px 0px 5px 4px var(--color); */
+    /* border: 1px solid #8052ec; */
+}
+
+h2 {
+    text-align: center;
+    text-shadow: 2px 2px 3px grey;
+    transition: all linear 1s;
+}
+
+/* h2:hover{
+    transform: translateY(-50%);
+} */
+.animatee{
+    border-bottom: 1px solid red;
+    transform: translateY(-50px);
+    transition: all linear 500ms;
+    font-size: 20px;
+    opacity: 0.1;
+}
+.animate{
+    border-bottom: 1px solid #04AA6D;
+    font-size: 36px;
+    transform: translateY(0px);
+    opacity: 1;
+    /* transform: scale(110%); */
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 8px 5px;
+    background-color: transparent;
+    margin: 0px auto 20px;
+    border: none;
+    box-shadow: 2px 2px 8px 1px grey;
+    color: white;
+
+}
+
+input[type=number] {
+    width: 100%;
+    padding: 8px 5px;
+    background-color: transparent;
+    margin: 0px auto 20px;
+    border: none;
+    box-shadow: 2px 2px 8px 1px grey;
+    color: white;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=password] {
+    width: 100%;
+    padding: 8px 5px;
+    background: transparent;
+    margin: 0px auto 20px;
+    border: none;
+    box-shadow: 2px 2px 8px 1px grey;
+    color: white;
+
+}
+
+input[type=radio] {
+    margin: 0px 0px 20px 10px;
+    cursor: pointer;
+}
+
+input[type=checkbox] {
+    margin: 0px 0px 20px 10px;
+    cursor: pointer;
+}
+
+label {
+    cursor: pointer;
+}
+
+#select {
+    background-color: transparent;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+}
+
+option {
+    background: black;
+}
+
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    background: transparent;
+}
+
+.warn {
+    display: none;
+    color: red;
+    padding: 0;
+    margin: -15px auto 10px;
+    font-size: 1rem;
+}
+
+.buttons {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#submit {
+    /* border-radius: 10%; */
+    margin: auto;
+    background: #111;
+    color: white;
+    font-size: large;
+    /* box-shadow: 3px 3px 10px 2px green; */
+    padding: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+select {
+    margin-bottom: 15px;
+}
+
+.removedefault {
+    display: none;
+}
+
+.requiredData {
+    color: red;
+}
+
+td {
+    border: none;
+    background-color: transparent;
+}
+
+table {
+    border: none;
+    background-color: transparent;
+    padding: 0 50px;
+    margin: auto;
+}
+
+/* th{
+    color: black;
+} */
+td,
+th {
+    font-size: large;
+    margin: 10px;
+    padding: 0 10px;
+    width: 120px;
+    text-align: center;
+    box-shadow: 2px 2px 10px 1px #0df39f28;
+    /* box-shadow: 2px 2px 10px 0.001px rgba(0, 0, 0, 0.4); */
+}
+
+.editData {
+    background-color: #04AA6D;
+    color: white;
+    font-size: large;
+    margin: 10px 0;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px 1px black;
+    padding: 0px 8px;
+    border: none;
+    border-radius: 5%;
+}
+
+.delete {
+    background-color: red;
+    color: white;
+    font-size: large;
+    margin-top: 10px 0;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px 2px grey;
+    border: none;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+#savechanges {
+    /* margin-top: 10px; */
+    background: #111;
+    color: white;
+    font-size: large;
+    /* box-shadow: 3px 3px 10px 2px green; */
+    padding: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type=date] {
+    margin-bottom: 15px;
+    background-color: transparent;
+    color: white;
+    font-size: 1.2rem;
+}
+
+#warnbirthdate {
+    display: none;
+}
+
+#seeFilteredData {
+    display: none;
+}
+
+#removefilterbtn {
+    display: none;
+    background-color: red;
+    box-shadow: 1px 1px 10px 2px grey;
+    cursor: pointer;
+}
+
+.fbtn {
+    background-color: #04AA6D;
+    box-shadow: 3px 3px 10px 2px #111;
+    border: none;
+    padding: 3px 10px;
+    /* max-height: 32px; */
+    color: white;
+    font-size: 1.2rem;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.btns {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+#date2 {
+    margin-left: 10px;
+}
+
+#labeld2 {
+    margin-left: 30px;
+}
+
+.filter {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px 0px;
+}
+
+.btns {
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.navigate {
+    color: black;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#paginationData {
+    margin-left: 50px;
+    color: white;
+    text-align: center;
+}
+
+.warnmsg {
+    color: yellow;
+}
+
+.filterdiv h1 {
+    text-align: center;
+    margin-right: 240px;
+}
+
+.filterdiv {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.filter1 {
+    margin: auto;
+    font-size: 1.2rem;
+}
+
+#fselect {
+    background-color: transparent;
+    color: white;
+}
+
+#fform {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+th a {
+    cursor: pointer;
+}
+tr:hover td{
+    background-color: #04AA6D;
+}
+table th:hover{
+    background-color: #04AA6D;
+}
+input[type=date] {
+    border: none;
+}
+
+#pages {
+    color: white;
+}
+
+.btnclr {
+    margin: 10px;
+    padding: 2px;
+    background: linear-gradient(45deg, #38EF7D, #11998E);
+}
+
+.btnclr:hover{
+    background: linear-gradient(330deg,  red, orange, yellow, green, blue, indigo, violet);
+    /* background: lawngreen; */
+}
+
+/* .btnclr:hover #submit{
+    background-color: red !important;
+} */
+input[type=text]:hover, input[type=number]:hover, input[type=password]:hover{
+    /* outline: 1px solid #04AA6D; */
+    box-shadow: 0px 0px 8px 1px #04AA6D;
+}
+
+.square{
+    background: #111;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+.sq1{
+    width: 50px;
+    height: 50px;
+    background-color: #111;
+    border-radius: 50%;
+}

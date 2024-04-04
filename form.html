@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body">
+
+    <div class="container">
+        <div class="formborder">
+
+            <div class="sq1"></div>
+
+
+            <form action="" name="form-validate" id="form" >
+
+
+                <h2 id="animateh2" class="animatee">Form Validation</h2>
+
+
+                <div class="infopage">
+
+                    <label for="name">Name : </label>
+                    <span class="requiredData" id="requiredData">*</span>
+                    <input type="text" id="name" placeholder="Enter your Name">
+                    <p id="warnname" class="warn"></p>
+
+                    <label for="username">Username : </label>
+                    <span class="requiredData" id="requiredData">*</span>
+                    <input type="text" id="username" placeholder="Enter your username">
+                    <p id="warnuser" class="warn"></p>
+
+                    <!-- <label for="age">Age : </label>
+                <span class="requiredData" id="requiredData">*</span>
+                <input type="number" name="age" id="age" placeholder="Enter your Age">
+                <p id="warnage" class="warn"></p> -->
+
+                </div>
+
+                <div class="contactpage">
+
+                    <label for="contact">Contact : </label>
+                    <span class="requiredData" id="requiredData">*</span>
+                    <input type="number" id="contact" placeholder="Enter your contact number">
+                    <p id="warncontact" class="warn"></p>
+
+                    <label for="email">E-mail : </label>
+                    <span class="requiredData" id="requiredData">*</span>
+                    <input type="text" id="email" placeholder="Enter your E-mail">
+                    <p id="warnemail" class="warn"></p>
+
+                    <label for="password">Password : </label>
+                    <span class="requiredData" id="requiredData">*</span>
+                    <input type="password" id="password" placeholder="Enter your Password">
+                    <p id="warnpassword" class="warn"></p>
+                </div>
+
+
+                <div class="optionalpage">
+
+                    <div class="date">
+                        <label for="birthdate">BirthDate : </label>
+                        <span class="requiredData" id="requiredData">*</span>
+                        <input type="date" id="birthdate">
+                        <script>
+                            var today = new Date().toISOString().split('T')[0];
+                            document.getElementById('birthdate').setAttribute("max", today);
+                        </script>
+                        <p id="warnbirthdate" class="warn"></p>
+                    </div>
+
+                    <div class="radio">
+
+                        <label for="gender">Gender : </label>
+
+                        <input type="radio" id="male" value="male" name="gender" checked>
+                        <label for="male"> Male</label>
+
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+
+                        <p id="warngender" class="warn"></p>
+                    </div>
+
+
+                    <div class="checkboxes">
+                        <label for="">Languages : </label>
+                        <span class="requiredData" id="requiredData">*</span>
+                        <input type="checkbox" name="language" id="check1" value="English">
+                        <label for="check1">English </label>
+
+                        <input type="checkbox" name="language" id="check2" value="Hindi">
+                        <label for="check2">Hindi </label>
+
+                        <input type="checkbox" name="language" id="check3" value="Gujarati">
+                        <label for="check3">Gujarati </label>
+
+                        <input type="checkbox" name="language" id="check4" value="Sanskrit">
+                        <label for="check4">Sanskrit </label>
+
+                        <p id="warnlanguage" class="warn"></p>
+
+
+                    </div>
+
+                    <div class="selectmenu">
+
+                        <label for="select">Select the Tech : </label>
+                        <span class="requiredData" id="requiredData">*</span>
+                        <select name="technology" id="select">
+                            <option value="" id="selecttech">Select Tech</option>
+                            <option value="reactjs" id="selectopt">ReactJs</option>
+                            <option value="nodejs" id="selectopt">NodeJs</option>
+                            <option value="wordpress" id="selectopt">Wordpress</option>
+                            <option value="shopify" id="selectopt">Shopify</option>
+                        </select>
+                        <p id="warntechnology" class="warn"></p>
+
+                    </div>
+
+
+                </div>
+
+                <div class="buttons">
+                    <div class="btnclr" id="btnclr">
+                        <input type="submit" name="submit" id="submit">
+                    </div>
+                    <div class="btnclr">
+                        <button id="savechanges">Save Changes</button>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <div class="filterdiv">
+        <h1>Filter your Data : </h1>
+
+
+        <div class="filter1">
+            <div class="selectmenu">
+                <label for="selectfilter">Select the Tech : </label>
+                <select name="technology" id="fselect">
+                    <option value="" id="selectnone">Select Tech</option>
+                    <option value="reactjs" id="selectopt">ReactJs</option>
+                    <option value="nodejs" id="selectopt">NodeJs</option>
+                    <option value="wordpress" id="selectopt">Wordpress</option>
+                    <option value="shopify" id="selectopt">Shopify</option>
+                </select>
+            </div>
+
+
+            <form action="" name="fform" id="fform">
+                <div class="radio">
+
+                    <label for="fgender">Gender : </label>
+
+                    <input type="radio" id="fmale" value="male" name="fgender">
+                    <label for="fmale"> Male</label>
+
+                    <input type="radio" id="ffemale" name="fgender" value="female">
+                    <label for="ffemale">Female</label>
+                </div>
+            </form>
+
+            <div class="fcheckboxes">
+                <label for="">Languages : </label>
+                <input type="checkbox" name="language" id="fcheck1" value="English">
+                <label for="fcheck1">English </label>
+
+                <input type="checkbox" name="language" id="fcheck2" value="Hindi">
+                <label for="fcheck2">Hindi </label>
+
+                <input type="checkbox" name="language" id="fcheck3" value="Gujarati">
+                <label for="fcheck3">Gujarati </label>
+
+                <input type="checkbox" name="language" id="fcheck4" value="Sanskrit">
+                <label for="fcheck4">Sanskrit </label>
+            </div>
+
+
+
+
+
+        </div>
+
+        <div class="filter">
+
+            <div class="btns">
+
+                <label for="date1">Date 1 : </label>
+                <input type="date" id="date1">
+                <label for="date1" id="labeld2">Date 2 : </label>
+                <input type="date" id="date2">
+                <button id="filterbtn" class="fbtn">Filter</button>
+                <button id="removefilterbtn" class="fbtn">Remove Filter</button>
+            </div>
+            <div class="pagination">
+                <p id="pages"></p>
+                <p id="demo1"></p>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+    <p id="seeFilteredData"></p>
+
+    <p id="demo"></p>
+    <p id="paginationData"></p>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
